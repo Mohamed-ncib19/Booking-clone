@@ -18,7 +18,7 @@
             } else {
                 input.classList.remove("bg-transparent");
                 input.classList.remove("bg-red-100");
-                input.classList.add("border-red-500");
+                input.classList.remove("border-red-500");
                 input.classList.add("bg-green-100");
                 input.classList.add("border-green-500");
             }
